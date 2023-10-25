@@ -4,11 +4,18 @@ import './App.css'
 
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
+  const [xIsNext, setXIsNext] = useState(true)
 
   const handleClick = (index) => {
     const newSquares = [...squares]
-    newSquares[index] = 'X'
+
+    // if (newSquares[index] || calculateWinner(newSquares)) {
+    //   return
+    // }
+
+    newSquares[index] = xIsNext ? 'X' : 'O'
     setSquares(newSquares)
+    setXIsNext(!xIsNext)
     
 
   }
