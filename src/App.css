@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+
 }
 .square {
   border: 1px solid black;
@@ -12,3 +13,9 @@ h1 {
   width: 620px;
   margin: auto
   }
+  body {
+    background-image: url('https://media.gettyimages.com/id/92899378/video/tic-tac-toe.jpg?s=640x640&k=20&c=4WBegzW9IB2gPFGGDXRUjAvmoC3iqLw66itD5vpxdDc=');
+    background-size: cover;
+    background-position: center;
+  }
+  
