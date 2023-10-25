@@ -7,12 +7,12 @@ const App = () => {
   const [xIsNext, setXIsNext] = useState(true)
 
   const handleClick = (index) => {
+    if (squares[index]) {
+      return
+    }
+  
     const newSquares = [...squares]
-
-    // if (newSquares[index] || calculateWinner(newSquares)) {
-    //   return
-    // }
-
+  
     newSquares[index] = xIsNext ? 'X' : 'O'
     setSquares(newSquares)
     setXIsNext(!xIsNext)
